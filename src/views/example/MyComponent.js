@@ -1,6 +1,6 @@
 import React from "react";
 import ChildComponent from "./ChildComponent";
-import Addcomponent from "./Addcomponent"
+import AddComponent from "./AddComponent"
 
 class MyComponent extends React.Component {
     state = {
@@ -48,14 +48,14 @@ class MyComponent extends React.Component {
         return (
 
             <>
-                <Addcomponent
+                <AddComponent
                     addNewJob={this.addNewJob}
                 />
 
                 <ChildComponent
 
                     arrJobs={this.state.arrJobs}
-                    deleteAjob={this.deleteAJob}
+                    deleteAJob={this.deleteAJob}
                 />
             </>
 

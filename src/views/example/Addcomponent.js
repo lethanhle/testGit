@@ -1,6 +1,6 @@
 import React from "react";
 
-class Addcomponent extends React.Component {
+class AddComponent extends React.Component {
     state = {
         title: '',
         salary: '',
@@ -58,4 +58,4 @@ class Addcomponent extends React.Component {
     }
 
 }
-export default Addcomponent;
+export default AddComponent;
