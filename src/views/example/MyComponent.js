@@ -37,11 +37,12 @@ class MyComponent extends React.Component {
 
 
     }
-    // deletaAJob = (job) => {
-    //     this.setState({
-    //         currenJobs: [...this.state.arrJobs.filter(item => item.id !== job.id)]
-    //     })
-    // }
+    componentDidUpdate(prevprops, prevState) {
+        console.log('>> run didupdate: ', 'prev state: ', prevState, 'current state: ', this.state)
+    }
+    componentDidMount() {
+        console.log('>>> run component did mount')
+    }
 
     render() {
         console.log('>>>>> call render: ', this.state)

@@ -64,7 +64,7 @@ class ChildComponent extends React.Component {
     handleOnclickDelete = (job) => {
         console.log('>>>handleOnclickDelete', job)
         console.log('>>>check data input: ', this.state)
-        this.props.deleteAJob('helo')
+        this.props.deleteAJob(job)
     }
     render() {
 
